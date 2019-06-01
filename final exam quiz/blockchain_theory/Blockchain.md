@@ -1,5 +1,4 @@
  # In the context of blockchain, what is the most fundamental definition of a transaction?
- 
  - [ ]  A transmission of a message between nodes
  - [x]  An atomic event that is allowed by the underlying protocol
  - [ ]  Exchange of a hash table between two peers
@@ -7,7 +6,6 @@
  
 
 #  In the context of a distributed ledger, how do you define blockchain? Which of the following statements are correct?
-
  - [x] As the ordered list of all transactions since inception
  - [x] As a well-ordered set of blocks
  - [ ] As a chain of transactions
@@ -16,12 +14,9 @@
 
 
 
-
 # Thinking about traditional network and database architecture, what does a transaction do in a blockchain environment?
-
  - [ ]  Update one table on one machine
  - [x] Update separate tables of accounts for the whole network
- 
  
  
  
@@ -32,24 +27,31 @@
 - [x] The truth is the set of data that all participants eventually agree on
 
 
+# What does a cryptographic hash function do?
+- [ ] It cracks a password challenge
+- [x] It converts an input, a.k.a. the message, into an output, a.k.a the hash
 
 
 
- 1.5. What does a cryptographic hash function do?
- It cracks a password challenge
- It converts an input, a.k.a. the message, into an output, a.k.a the hash
- 1.6. Take the example of the KECCAK-256 hashing algorithm. Can the message easily be calculated from the hash with a normal desktop computer?
- Yes
- No
- 1.7. What is the difference between the KECCAK-256 hashes of "bird" and of "bard"?
- One letter in the hash is different
- At most 50% of the content differ
- The hashes differ fundamentally
- 1.8. Are there two different messages that have the same SHA-512 hash value?
- Yes, and the likelihood of finding two messages with the same hash value is quite high
- Yes, but the likelihood is extremely low, no example has been found yet
- No, all hashes are unique
- 1.9. Can hash functions be used to index messages?
+ # Take the example of the KECCAK-256 hashing algorithm. Can the message easily be calculated from the hash with a normal desktop computer?
+ - [ ] Yes
+ - [x] No
+
+ # What is the difference between the KECCAK-256 hashes of "bird" and of "bard"?
+- [ ] One letter in the hash is different
+- [ ] At most 50% of the content differ
+- [x] The hashes differ fundamentally
+
+
+ # Are there two different messages that have the same SHA-512 hash value?
+ - [] Yes, and the likelihood of finding two messages with the same hash value is quite high
+ - [x] Yes, but the likelihood is extremely low, no example has been found yet
+ - [] No, all hashes are unique
+
+(https://crypto.stackexchange.com/questions/27782/are-there-any-text-strings-that-will-generate-the-same-sha-512-hash-output)
+
+ #
+  Can hash functions be used to index messages?
  Yes, by mapping hashes to their messages
  No, because hashes are not unique
  1.10. Can a hash be used to check that a message has not been changed?
