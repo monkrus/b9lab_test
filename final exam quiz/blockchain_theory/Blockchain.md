@@ -44,47 +44,65 @@
 
 
  # Are there two different messages that have the same SHA-512 hash value?
- - [] Yes, and the likelihood of finding two messages with the same hash value is quite high
+ - [ ] Yes, and the likelihood of finding two messages with the same hash value is quite high
  - [x] Yes, but the likelihood is extremely low, no example has been found yet
- - [] No, all hashes are unique
+ - [ ] No, all hashes are unique
 
 (https://crypto.stackexchange.com/questions/27782/are-there-any-text-strings-that-will-generate-the-same-sha-512-hash-output)
 
- #
-  Can hash functions be used to index messages?
- Yes, by mapping hashes to their messages
- No, because hashes are not unique
- 1.10. Can a hash be used to check that a message has not been changed?
- No
- Yes
- 1.11. Where is data stored in a Merkle Tree?
- In each node of the tree
- In the leaves of the tree
- In the root of the tree
- 1.12. How is data collected from a Merkle tree?
- The tree is traversed depth-first and data is read from each leaf
- The tree is traversed depth-first and data is read from every node
- The data is extracted from the merkle root
- 1.13. What is a node in a Merkle Tree?
- A node contains the data of its parent nodes
- A node contains the hash of its children
- 1.14. How is a gossip network defined?
- A gossip network stores data on a central server accessible to a set of machines
- In a gossip network each node relays received data to its other peers
- 1.15. What is the Byzantine General's Problem?
- How to distribute data in a hierarchy-free, permission-less and failure-prone network
- How to reach consensus in a hierarchy-free, permission-less and failure-prone network
- How to find peers in a hierarchy-free, permission-less and failure-prone network
- 1.16. Does the Byzantine General's problem have an absolute solution?
- No, it can only be mitigated
- Yes, it has been solved by the Byzantine General's Solution
- 1.17. In the ethash Proof-of-Work consensus algorithms, what determines whether a block is valid?
- A hash calculation of a combination of merkle roots, block number, previous block hash, beneficiary address, timestamp and nonce has the right number of leading 0's
- A hash calculation of a combination of merkle roots, block number, previous block hash, timestamp and nonce has the right number of leading 0's
- 1.18. In the ethash and hashcash Proof-of-Work consensus algorithms, what is a nonce?
- A random string that has never been used
+ # Can hash functions be used to index messages?
+- [x] Yes, by mapping hashes to their messages
+- [ ] No, because hashes are not unique
+
+
+
+ # Can a hash be used to check that a message has not been changed?
+- [ ] No
+- [x] Yes
+
+
+ # Where is data stored in a Merkle Tree?
+
+ - [x] In each node of the tree
+ - [ ] In the leaves of the tree
+ - [ ] In the root of the tree
+
+
+# How is data collected from a Merkle tree?
+- [ ] The tree is traversed depth-first and data is read from each leaf
+- [x] The tree is traversed depth-first and data is read from every node
+- [ ] The data is extracted from the merkle root
+
+
+# What is a node in a Merkle Tree?
+- [ ] A node contains the data of its parent nodes
+- [x] A node contains the hash of its children
+
+ # How is a gossip network defined?
+ - [] A gossip network stores data on a central server accessible to a set of machines
+ - [x] In a gossip network each node relays received data to its other peers
+
+
+ # What is the Byzantine General's Problem?
+
+ - [ ] How to distribute data in a hierarchy-free, permission-less and failure-prone network
+ - [x] How to reach consensus in a hierarchy-free, permission-less and failure-prone network
+ - [ ] How to find peers in a hierarchy-free, permission-less and failure-prone network
+
+# Does the Byzantine General's problem have an absolute solution?
+
+ - [x] No, it can only be mitigated
+ - [ ] Yes, it has been solved by the Byzantine General's Solution
+
+# In the ethash Proof-of-Work consensus algorithms, what determines whether a block is valid?
+ - [x] A hash calculation of a combination of merkle roots, block number, previous block hash, beneficiary address, timestamp and nonce has the right number of leading 0's
+ - [ ] A hash calculation of a combination of merkle roots, block number, previous block hash, timestamp and nonce has the right number of leading 0's
+
+# In the ethash and hashcash Proof-of-Work consensus algorithms, what is a nonce?
+ -A random string that has never been used
  The hash of the current timestamp used by the miner
  A one-time word that is varied by the miner to achieve different hashes
+
  1.19. In the ethash and hashcash Proof-of-Work consensus algorithms, what does the difficulty determine?
  The number of blocks a miner has to propose before the network accepts one
  The number of leading zeros required in a block hash calculation required for a valid block
