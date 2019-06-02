@@ -99,35 +99,44 @@
  - [ ] A hash calculation of a combination of merkle roots, block number, previous block hash, timestamp and nonce has the right number of leading 0's
 
 # In the ethash and hashcash Proof-of-Work consensus algorithms, what is a nonce?
- -A random string that has never been used
- The hash of the current timestamp used by the miner
- A one-time word that is varied by the miner to achieve different hashes
+- [ ] A random string that has never been used
+- [ ] The hash of the current timestamp used by the miner
+- [x] A one-time word that is varied by the miner to achieve different hashes
 
- 1.19. In the ethash and hashcash Proof-of-Work consensus algorithms, what does the difficulty determine?
- The number of blocks a miner has to propose before the network accepts one
- The number of leading zeros required in a block hash calculation required for a valid block
- The time a transaction has to remain in the transaction pool
- 1.20. What does the CAP theorem stand for?
- Consistency, Affirmability, Partition
- Christopher Antonopolous Programme
- Consistency, Availability, Partition tolerance
- 1.21. For a malicious node to remove or insert transactions, it would need to update the root hash of the containing block's Merkle tree, update the nonce of the containing block, update the hash of the containing block and do the same for all subsequent blocks. Under what circumstances is that possible?
- If the attacker issues at least 50% of all transactions
- If the attacker controls more than 50% of the mining power in a blockchain network
- 1.22. What does a generic block header contain?
- List of Transactions
- State changes resulting from transactions
- Merkle Root of transactions
- Hash of previous block
- Signatures of all senders of transactions
- 1.23. Where is the Merkle root used in the context of blockchain?
+# In the ethash and hashcash Proof-of-Work consensus algorithms, what does the difficulty determine?
+- [x] The number of blocks a miner has to propose before the network accepts one
+- [ ] The number of leading zeros required in a block hash calculation required for a valid block
+- [ ] The time a transaction has to remain in the transaction pool
+
+#What does the CAP theorem stand for?
+ - [ ] Consistency, Affirmability, Partition
+ - [ ] Christopher Antonopolous Programme
+ - [x]Consistency, Availability, Partition tolerance
+
+# For a malicious node to remove or insert transactions, it would need to update the root hash of the containing block's Merkle tree, update the nonce of the containing block, update the hash of the containing block and do the same for all subsequent blocks. Under what circumstances is that possible?
+- [ ] If the attacker issues at least 50% of all transactions
+- [x] If the attacker controls more than 50% of the mining power in a blockchain network
+
+
+# What does a generic block header contain?
+- [ ] List of Transactions
+- [ ] State changes resulting from transactions
+- [x] Merkle Root of transactions
+- [x] Hash of previous block
+- [ ] Signatures of all senders of transactions
+(https://www.oreilly.com/library/view/mastering-bitcoin/9781491902639/ch07.html)
+
+# Where is the Merkle root used in the context of blockchain?
  The genesis block
  The root hash of a Merkle tree containing all transactions in a block
  The root hash of a Merkle tree of all previous blocks
- 1.24. What can we use a Merkle Tree for?
+
+
+# What can we use a Merkle Tree for?
  Compress data by calculating the Merkle root
  Compare complex collections of data by comparing the Merkle root
  Use the Merkle root to calculate the original dataset
+ 
  1.25. How does a key/value pair table, whose keys are hashed from the values, compare to a key/value pair table whose content is indexed by arbitrary key? Select all correct statements.
  a table indexed by arbitrary key is faster to read
  a table indexed by hash allows incorporation of checks for protection from error and malice, unlike one by arbitrary key
