@@ -125,23 +125,25 @@
 - [x] Hash of previous block
 - [ ] Signatures of all senders of transactions
 (https://www.oreilly.com/library/view/mastering-bitcoin/9781491902639/ch07.html)
+(https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/)
 
 # Where is the Merkle root used in the context of blockchain?
- The genesis block
- The root hash of a Merkle tree containing all transactions in a block
- The root hash of a Merkle tree of all previous blocks
+ - [x] The genesis block
+ - [ ] The root hash of a Merkle tree containing all transactions in a block
+ - [ ] The root hash of a Merkle tree of all previous blocks
 
 
 # What can we use a Merkle Tree for?
- Compress data by calculating the Merkle root
- Compare complex collections of data by comparing the Merkle root
- Use the Merkle root to calculate the original dataset
- 
- 1.25. How does a key/value pair table, whose keys are hashed from the values, compare to a key/value pair table whose content is indexed by arbitrary key? Select all correct statements.
+- [ ]Compress data by calculating the Merkle root
+- [ ]Compare complex collections of data by comparing the Merkle root
+- [x] Use the Merkle root to calculate the original dataset
+
+# How does a key/value pair table, whose keys are hashed from the values, compare to a key/value pair table whose content is indexed by arbitrary key? Select all correct statements.
  a table indexed by arbitrary key is faster to read
  a table indexed by hash allows incorporation of checks for protection from error and malice, unlike one by arbitrary key
  a table indexed by hash can grow much larger than one by arbitrary key
  a table indexed by arbitrary key can hold duplicate values, unlike one by hash
+ 
  1.26. What is the double-spend attack within Bitcoin?
  the attacker sends 2 different transactions at the same time to the network, in order to send the same coin to 2 different recipients before the nodes can spot the fraud
  the attacker sends the coin to a recipient in exchange for a consideration, then waits to receive the consideration, then builds a fork that does not contain the previous transaction and that is still acceptable to the network
